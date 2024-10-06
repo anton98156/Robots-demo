@@ -15,10 +15,11 @@ public class App {
 
     public static void main(String[] args) throws InterruptedException {
 
+        RobotMap map = null;
         Scanner sc = new Scanner(System.in);
+
         System.out.println("\nВведите команду для создания карты:");
 
-        RobotMap map = null;
         while (true) {
             String command = sc.nextLine();
             if (command.startsWith("create-map")) {
@@ -40,20 +41,25 @@ public class App {
                     new CreateRobotCommandHendler(),
                     new MoveRobotCommandHendler(), 
                     new ChangeDirectionCommandHandler());
-        
+                    
         CommandManager commandManager = new CommandManager(map, handlers);
-
         int count = 0;
+
         System.out.println("\nИГРАЕМ...");
+
         while (count < 20) {
             System.out.println("\nВведите команду:");
+
             String command = sc.nextLine();
             commandManager.handleCommand(command);
+
             System.out.println("\nКарта: ");
             System.out.println(RobotMap.robots.toString());
+            
             Thread.sleep(1000);
             count++;
         }
+
         sc.close();
     }
 }
