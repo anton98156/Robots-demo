@@ -15,8 +15,8 @@ public class MoveRobotCommandHendler implements CommandHandler{
     @Override
     public void handleCommand(RobotMap map, String[] args) {
         UUID robotId = UUID.fromString(args[0]);
-
         RobotMap.Robot robotById = map.getRobotById(robotId);
+        
         if (robotById != null) {
             try {
                 robotById.move();
