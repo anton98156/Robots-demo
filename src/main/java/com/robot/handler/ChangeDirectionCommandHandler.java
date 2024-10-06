@@ -1,6 +1,8 @@
-package robots;
+package com.robot.handler;
 
 import java.util.UUID;
+
+import com.robot.map.RobotMap;
 
 public class ChangeDirectionCommandHandler implements CommandHandler {
 

@@ -1,8 +1,10 @@
-package robots;
+package com.robot.map;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
+
+import com.robot.exception.PositionException;
 
 public class RobotMap {
 

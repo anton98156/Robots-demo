@@ -1,10 +1,17 @@
-package robots;
+package com.robot;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class Controller {
+import com.robot.handler.ChangeDirectionCommandHandler;
+import com.robot.handler.CommandHandler;
+import com.robot.handler.CommandManager;
+import com.robot.handler.CreateRobotCommandHendler;
+import com.robot.handler.MoveRobotCommandHendler;
+import com.robot.map.RobotMap;
+
+public class App {
 
     public static void main(String[] args) throws InterruptedException {
 

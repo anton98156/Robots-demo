@@ -1,7 +1,9 @@
-package robots;
+package com.robot.handler;
 
 import java.util.Arrays;
 import java.util.List;
+
+import com.robot.map.RobotMap;
 
 public class CommandManager {
 

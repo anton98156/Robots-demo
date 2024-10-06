@@ -1,4 +1,4 @@
-package robots;
+package com.robot.map;
 
 public class Point {
 

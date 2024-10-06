@@ -1,6 +1,9 @@
-package robots;
+package com.robot.handler;
 
 import java.util.UUID;
+
+import com.robot.exception.PositionException;
+import com.robot.map.RobotMap;
 
 public class MoveRobotCommandHendler implements CommandHandler{
     

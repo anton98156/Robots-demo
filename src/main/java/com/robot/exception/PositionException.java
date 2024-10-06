@@ -1,4 +1,4 @@
-package robots;
+package com.robot.exception;
 
 public class PositionException extends Exception {
 

@@ -1,4 +1,8 @@
-package robots;
+package com.robot.handler;
+
+import com.robot.exception.PositionException;
+import com.robot.map.Point;
+import com.robot.map.RobotMap;
 
 public class CreateRobotCommandHendler implements CommandHandler{
     
